@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Отчёт по практике</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+<div class="body">
+    <div class="header">
+       Табулирование функции
+    </div>
+
+    <div class="div_full">
+        <div class="div_part">
+            <div class="div_header">
+                Ввод данных
+            </div>
+            <div class="div_form">
+                <label>
+                    <div class="label">Введите функцию:</div>
+                    <div class="label">Пример функции: 5*x^4+3*x-2*5+1</div>
+                    <input class="input" type="text" id="input-form"></label><br/>
+                    <div class="error-log" id="input-log-form"></div>
+                <label>
+                    <div class="label">Введите значение a левого конца отрезка
+                        табулирования:</div>
+                    <input class="input" type="text" id="input-1"></label><br/>
+                    <div class="error-log" id="input-log-1"></div>
+                <label>
+                    <div class="label">Введите значение b правого конца отрезка
+                        табулирования:</div>
+                    <input class="input" type="text" id="input-2"></label><br/>
+                    <div class="error-log" id="input-log-2"></div>
+                <label>
+                    <div class="label">Введите значение h шага табулирования:</div>
+                    <input class="input" type="text" id="input-3"></label><br/>
+                    <div class="error-log" id="input-log-3"></div>
+            </div>
+            <button class="button" onclick="calculateFirst()">Протабулировать</button>
+            <button class="button" onclick="clearMessages()">Очистить</button>
+        </div>
+        <div class="div_part">
+            <div class="div_header">
+                Результат:
+            </div>
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
